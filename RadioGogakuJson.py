@@ -17,7 +17,7 @@ def main():
         path_delimiter="/"
         today=datetime.date.today()
         download_dir=expanduser("~")+"/Downloads/NHK語学講座"+"{0}_CW{1}".format(str(today.year),str(today.isocalendar()[1]).zfill(2))
-        ffmpeg_bin="/opt/homebrew/bin/ffmpeg"
+        ffmpeg_bin="./ffmpeg"
     else: #Linux(Synology-NAS)
         path_delimiter="/"
         download_dir="/volume1/music/NHK語学講座"
