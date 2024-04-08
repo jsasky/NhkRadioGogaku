@@ -80,6 +80,19 @@ def main():
                 year=nendo
             # print(f"nendo:{nendo} / year:{year} / month:{month} / day:{day}")
 
+            #※ボキャブライダー対応
+            #放送年度年とダウンロード年の差が2年以上ある場合はダウンロードしない
+            if ( datetime.date.today().year - nendo ) > 1:
+                continue
+            #放送年度年とダウンロード年の差が1年で放送月が4-11月の場合は一年以上前のコンテンツと判断してダウンロードしない
+            elif ( ( datetime.date.today().year - nendo ) == 1 ) and ( month > 3 ):
+                continue
+            else:
+                #放送日とダウンロード日が1週間以上離れている、もしくはダウンロード日以降に放送予定のものはダウンロードしない
+                elapsed_day = ( datetime.date.today() - datetime.date(year,month,day) ).days
+                if elapsed_day > 7 or elapsed_day < 0:
+                    continue
+
             # MP3に埋め込むタグ情報をセットする
             tag_title=kouza+" "+"{0}年{1}月{2}日放送分".format(year,str(month).zfill(2),str(day).zfill(2))
             tag_year=nendo
