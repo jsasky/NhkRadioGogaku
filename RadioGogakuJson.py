@@ -24,7 +24,7 @@ def main():
         ffmpeg_bin="/volume1/@appstore/ffmpeg/bin/ffmpeg"
 
     #各語学講座のjsonのURL、講座名、ダウンロード完了済みかどうかをチェックするファイルサイズ、MP3タイトルタグから消去するプレフィックス文字列を定義する
-    url_kouza_sizes  = [['https://www.nhk.or.jp/radioondemand/json/7512/bangumi_7512_01.json', 'ニュースで英会話',  7201000, 'ニュースで学ぶ「現代英語」\u3000' ]]
+    url_kouza_sizes  = [['https://www.nhk.or.jp/radioondemand/json/7512/bangumi_7512_01.json', 'ニュースで学ぶ「現代英語」',  7201000, 'ニュースで学ぶ「現代英語」\u3000' ]]
 
     # ダウンロード先のフォルダがない場合はフォルダを作成する
     os.makedirs(download_dir, exist_ok=True)
