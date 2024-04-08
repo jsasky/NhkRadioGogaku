@@ -90,7 +90,7 @@ def main():
             else:
                 #放送日とダウンロード日が1週間以上離れている、もしくはダウンロード日以降に放送予定のものはダウンロードしない
                 elapsed_day = ( datetime.date.today() - datetime.date(year,month,day) ).days
-                if elapsed_day > 7 or elapsed_day < 0:
+                if ( elapsed_day < 0 ) and ( 7 < elapsed_day ):
                     continue
 
             # MP3に埋め込むタグ情報をセットする
