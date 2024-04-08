@@ -35,7 +35,7 @@ def main():
     # url_kouza_sizes += [['https://www.nhk.or.jp/gogaku/st/xml/english/vr-radio/listdataflv.xml',   'ボキャブライダー',                   2407200 ]]
     # url_kouza_sizes += [['https://www.nhk.or.jp/gogaku/st/xml/english/enjoy/listdataflv.xml',      'エンジョイ・シンプル・イングリッシュ', 7201000 ]]
     # url_kouza_sizes += [['https://www.nhk.or.jp/gogaku/st/xml/english/timetrial/listdataflv.xml',  '英会話タイムトライアル',             4801300 ]]
-    url_kouza_sizes += [['https://www.nhk.or.jp/gogaku/st/xml/english/business1/listdataflv.xml',  'ラジオビジネス英語',               7201000 ]]
+    # url_kouza_sizes += [['https://www.nhk.or.jp/gogaku/st/xml/english/business1/listdataflv.xml',  'ラジオビジネス英語',               7201000 ]]
     url_kouza_sizes += [['https://www.nhk.or.jp/gogaku/st/xml/french/kouza/listdataflv.xml',       'まいにちフランス語【入門編】',        7201000 ]]
     url_kouza_sizes += [['https://www.nhk.or.jp/gogaku/st/xml/french/kouza2/listdataflv.xml',      'まいにちフランス語【応用編】',        7201000 ]]
     url_kouza_sizes += [['https://www.nhk.or.jp/gogaku/st/xml/italian/kouza/listdataflv.xml',      'まいにちイタリア語【入門編】',        7201000 ]]
