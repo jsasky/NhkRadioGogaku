@@ -84,8 +84,8 @@ def main():
             #放送年度年とダウンロード年の差が2年以上ある場合はダウンロードしない
             if ( datetime.date.today().year - nendo ) > 1:
                 continue
-            #放送年度年とダウンロード年の差が1年で放送月が4-11月の場合は一年以上前のコンテンツと判断してダウンロードしない
-            elif ( ( datetime.date.today().year - nendo ) == 1 ) and ( month > 3 ):
+            #放送年度年とダウンロード年の差が1年で放送月が4-11月の場合は一ヶ月以上前のコンテンツと判断してダウンロードしない
+            elif ( ( datetime.date.today().year - nendo ) == 1 ) and ( 3 < month ) and ( month < 12 ):
                 continue
             else:
                 #放送日とダウンロード日が1週間以上離れている、もしくはダウンロード日以降に放送予定のものはダウンロードしない
