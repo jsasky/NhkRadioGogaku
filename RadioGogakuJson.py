@@ -42,7 +42,7 @@ def main():
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0946/bangumi_0946_01.json', 'まいにちイタリア語【初級編】', 7201000, 'まいにちイタリア語 初級編 ', 'まいにちイタリア語　初級編　' ]]
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0946/bangumi_0946_01.json', 'まいにちイタリア語【応用編】',  7201000, 'まいにちイタリア語 応用編 ', 'まいにちイタリア語　応用編　' ]]
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0943/bangumi_0943_01.json', 'まいにちドイツ語【初級編】',    7201000, 'まいにちドイツ語 初級編 ', 'まいにちドイツ語　初級編　' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0943/bangumi_0943_01.json', 'まいにちドイツ語【応用編】',   7201000, 'まいにちドイツ語 応用編　', 'まいにちドイツ語　応用編　' ]]
+    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0943/bangumi_0943_01.json', 'まいにちドイツ語【応用編】',   7201000, 'まいにちドイツ語　応用編　', 'まいにちドイツ語　応用編　' ]]
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0953/bangumi_0953_01.json', 'まいにちフランス語【初級編】',  7201000, 'まいにちフランス語 初級編 ', 'まいにちフランス語　初級編　' ]]
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0953/bangumi_0953_01.json', 'まいにちフランス語【応用編】', 7201000, 'まいにちフランス語 応用編 ', 'まいにちフランス語　応用編　' ]]
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0948/bangumi_0948_01.json', 'まいにちスペイン語【初級編】',  7201000, 'まいにちスペイン語 初級編 ', 'まいにちスペイン語　初級編　' ]]
