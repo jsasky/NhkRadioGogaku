@@ -12,12 +12,12 @@ def main():
     if sys.platform=='win32': #Windows
         path_delimiter="\\"
         today=datetime.date.today()
-        download_dir=".\\download_" + "{0}_CW{1}".format(str(today.year),str(today.isocalendar()[1]).zfill(2))
+        download_dir=".\\download"
         ffmpeg_bin=".\\win\\ffmpeg.exe"
     elif sys.platform=='darwin': #Mac
         path_delimiter="/"
         today=datetime.date.today()
-        download_dir=expanduser("~")+"/Downloads/NHK語学講座"+"{0}_CW{1}".format(str(today.year),str(today.isocalendar()[1]).zfill(2))
+        download_dir=expanduser("~")+"/Downloads/NHK語学講座"
         ffmpeg_bin="./mac/ffmpeg"
     else: #Linux(Synology-NAS)
         path_delimiter="/"
