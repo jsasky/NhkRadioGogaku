@@ -72,6 +72,7 @@ def main():
             json_dict = json.load(f)
         os.remove(bangumi_json)
 
+        # 最後にダウンロードしたファイルパスを保持する変数を初期化する
         last_download_path=""
 
         # 各LessonのストリーミングデータをMP3に変換してダウンロードする
@@ -103,6 +104,8 @@ def main():
                 os.makedirs(download_subdir, exist_ok=True)
                 download_filename=kouza+" "+"{0}年{1}月{2}日放送分".format(year,str(month).zfill(2),str(day).zfill(2))+".mp3"
                 download_path=download_subdir+path_delimiter+download_filename
+
+                # 最後にダウンロードしたファイルパスと今回保存するファイルパスが同じものは同日に放送される特別番組と判断してダウンロードファイルのファイル名に'_Special'を付与する
                 if download_path == last_download_path :
                     download_filename=kouza+" "+"{0}年{1}月{2}日放送分".format(year,str(month).zfill(2),str(day).zfill(2))+"_SpecialProgram.mp3"
                     download_path=download_subdir+path_delimiter+download_filename
