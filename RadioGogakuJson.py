@@ -72,6 +72,8 @@ def main():
             json_dict = json.load(f)
         os.remove(bangumi_json)
 
+        last_download_path=""
+
         # 各LessonのストリーミングデータをMP3に変換してダウンロードする
         for json_element in json_dict.values():
             for json_program in json_element['detail_list']:
@@ -101,6 +103,10 @@ def main():
                 os.makedirs(download_subdir, exist_ok=True)
                 download_filename=kouza+" "+"{0}年{1}月{2}日放送分".format(year,str(month).zfill(2),str(day).zfill(2))+".mp3"
                 download_path=download_subdir+path_delimiter+download_filename
+                if download_path == last_download_path :
+                    download_filename=kouza+" "+"{0}年{1}月{2}日放送分".format(year,str(month).zfill(2),str(day).zfill(2))+"_SpecialProgram.mp3"
+                    download_path=download_subdir+path_delimiter+download_filename
+                last_download_path = download_path
                 #print(f"download_path:{download_path}")
 
                 # ストリーミングファイルのURLをセットする
