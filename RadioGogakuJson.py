@@ -26,19 +26,19 @@ def main():
 
     #各語学講座のjsonのURL、講座名、ダウンロード完了済みかどうかをチェックするファイルサイズ、MP3タイトルタグから消去するプレフィックス文字列を定義する
     url_kouza_size_prefix_filters  = []
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/6805/bangumi_6805_01.json', '小学生の基礎英語',           4801000, '', '' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/6806/bangumi_6806_01.json', '中学生の基礎英語レベル1',     7201000, '', '' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/6807/bangumi_6807_01.json', '中学生の基礎英語レベル2',     7201000, '', '' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/6808/bangumi_6808_01.json', '中高生の基礎英語inEnglish',  7201000, '中高生の基礎英語 in English ', '' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/6809/bangumi_6809_01.json', 'ラジオビジネス英語',         7201000, 'ラジオビジネス英語 ', '' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/6805/bangumi_6805_01.json', '小学生の基礎英語',           4801000, '', '' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/6806/bangumi_6806_01.json', '中学生の基礎英語レベル1',     7201000, '', '' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/6807/bangumi_6807_01.json', '中学生の基礎英語レベル2',     7201000, '', '' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/6808/bangumi_6808_01.json', '中高生の基礎英語inEnglish',  7201000, '中高生の基礎英語 in English ', '' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/6809/bangumi_6809_01.json', 'ラジオビジネス英語',         7201000, 'ラジオビジネス英語 ', '' ]]
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0916/bangumi_0916_01.json', 'ラジオ英会話',              7201000, 'ラジオ英会話 ', '' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/2331/bangumi_2331_01.json', '英会話タイムトライアル',      4801000, '英会話タイムトライアル', '' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/2331/bangumi_2331_01.json', '英会話タイムトライアル',      4801000, '英会話タイムトライアル', '' ]]
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/7512/bangumi_7512_01.json', 'ニュースで学ぶ「現代英語」',   7201000, 'ニュースで学ぶ「現代英語」 ', '' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/4121/bangumi_4121_01.json', 'ボキャブライダー',           2401000, '', '' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0915/bangumi_0915_01.json', 'まいにち中国語',             7201000, 'まいにち中国語 ', '' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/6581/bangumi_6581_01.json', 'ステップアップ中国語',        7201000, 'ステップアップ中国語', '' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0951/bangumi_0951_01.json', 'まいにちハングル講座',        7201000, 'まいにちハングル講座 ', '' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/6810/bangumi_6810_01.json', 'ステップアップハングル講座',   7201000, 'ステップアップ ハングル講座 ', '' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/4121/bangumi_4121_01.json', 'ボキャブライダー',           2401000, '', '' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0915/bangumi_0915_01.json', 'まいにち中国語',             7201000, 'まいにち中国語 ', '' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/6581/bangumi_6581_01.json', 'ステップアップ中国語',        7201000, 'ステップアップ中国語', '' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0951/bangumi_0951_01.json', 'まいにちハングル講座',        7201000, 'まいにちハングル講座 ', '' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/6810/bangumi_6810_01.json', 'ステップアップハングル講座',   7201000, 'ステップアップ ハングル講座 ', '' ]]
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0946/bangumi_0946_01.json', 'まいにちイタリア語【初級編】', 7201000, 'まいにちイタリア語 初級編 ', 'まいにちイタリア語　初級編　' ]]
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0946/bangumi_0946_01.json', 'まいにちイタリア語【応用編】',  7201000, 'まいにちイタリア語 応用編 ', 'まいにちイタリア語　応用編　' ]]
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0943/bangumi_0943_01.json', 'まいにちドイツ語【初級編】',    7201000, 'まいにちドイツ語 初級編 ', 'まいにちドイツ語　初級編　' ]]
@@ -47,10 +47,10 @@ def main():
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0953/bangumi_0953_01.json', 'まいにちフランス語【応用編】', 7201000, 'まいにちフランス語 応用編 ', 'まいにちフランス語　応用編　' ]]
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0948/bangumi_0948_01.json', 'まいにちスペイン語【初級編】',  7201000, 'まいにちスペイン語 初級編 ', 'まいにちスペイン語　初級編　' ]]
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0948/bangumi_0948_01.json', 'まいにちスペイン語【応用編】', 7201000, 'まいにちスペイン語 応用編 ', 'まいにちスペイン語　応用編　' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0956/bangumi_0956_01.json', 'まいにちロシア語【初級編】',    7201000, 'まいにちロシア語 初級編 ', 'まいにちロシア語　初級編　' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0956/bangumi_0956_01.json', 'まいにちロシア語【応用編】',   7201000, 'まいにちロシア語 応用編 ', 'まいにちロシア語　応用編　' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0937/bangumi_0937_01.json', 'アラビア語講座',              7201000, 'アラビア語講座 ', '' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/2769/bangumi_2769_01.json', 'ポルトガル語講座【入門編】',     7201000, 'ポルトガル語講座 入門 ', '' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0956/bangumi_0956_01.json', 'まいにちロシア語【初級編】',    7201000, 'まいにちロシア語 初級編 ', 'まいにちロシア語　初級編　' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0956/bangumi_0956_01.json', 'まいにちロシア語【応用編】',   7201000, 'まいにちロシア語 応用編 ', 'まいにちロシア語　応用編　' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/0937/bangumi_0937_01.json', 'アラビア語講座',              7201000, 'アラビア語講座 ', '' ]]
+    # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radioondemand/json/2769/bangumi_2769_01.json', 'ポルトガル語講座【入門編】',     7201000, 'ポルトガル語講座 入門 ', '' ]]
 
     # ダウンロード先のフォルダがない場合はフォルダを作成する
     os.makedirs(download_dir, exist_ok=True)
@@ -107,7 +107,8 @@ def main():
 
                 # 最後にダウンロードしたファイルパスと今回保存するファイルパスが同じものは同日に放送される特別番組と判断してダウンロードファイルのファイル名に'_Special'を付与する
                 if download_path == last_download_path :
-                    download_filename=kouza+" "+"{0}年{1}月{2}日放送分".format(year,str(month).zfill(2),str(day).zfill(2))+"_SpecialProgram.mp3"
+                    filename_content=unicodedata.normalize('NFKC', contents).replace(title_replace, '')
+                    download_filename=kouza+" "+"{0}年{1}月{2}日放送分".format(year,str(month).zfill(2),str(day).zfill(2))+"_"+filename_content+".mp3"
                     download_path=download_subdir+path_delimiter+download_filename
                 last_download_path = download_path
                 #print(f"download_path:{download_path}")
