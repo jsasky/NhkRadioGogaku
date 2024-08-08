@@ -33,7 +33,7 @@ def main():
     # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/series?site_id=6809&corner_site_id=01', 'ラジオビジネス英語',         7200000, 'ラジオビジネス英語 ', '' ]]
     url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/series?site_id=0916&corner_site_id=01', 'ラジオ英会話',              7200000, 'ラジオ英会話 ', '' ]]
     # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/series?site_id=2331&corner_site_id=01', '英会話タイムトライアル',      4800000, '英会話タイムトライアル', '' ]]
-    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/series?site_id=7512&corner_site_id=01', 'ニュースで学ぶ「現代英語」',   7200000, 'ニュースで学ぶ「現代英語」 ', '' ]]
+    url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/series?site_id=77RQWQX1L6&corner_site_id=01', 'ニュースで学ぶ「現代英語」',   7200000, 'ニュースで学ぶ「現代英語」 ', '' ]]
     # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/series?site_id=4121&corner_site_id=01', 'ボキャブライダー',           2400000, '', '' ]]
     # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/series?site_id=0915&corner_site_id=01', 'まいにち中国語',             7200000, 'まいにち中国語 ', '' ]]
     # url_kouza_size_prefix_filters += [['https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/series?site_id=6581&corner_site_id=01', 'ステップアップ中国語',        7200000, 'ステップアップ中国語', '' ]]
@@ -144,3 +144,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
