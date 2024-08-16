@@ -72,11 +72,11 @@ def main():
             json_dict = json.load(f)
         os.remove(bangumi_json)
 
+        # ダウンロードしたファイルパスを保持する変数を初期化する
+        last_download_path_only_date=""
+
         # 各LessonのストリーミングデータをMP3に変換してダウンロードする
         for json_element in json_dict['episodes']:
-
-            # ダウンロードしたファイルパスを保持する変数を初期化する
-            last_download_path_only_date=""
 
             #放送年月日を取得する
             datetime_string=json_element['aa_contents_id'].split(";")[3]
