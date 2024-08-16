@@ -26,53 +26,53 @@ def main():
 
 
     #各語学講座のseries/corner ID取得キーワード、講座名、ダウンロード完了済みかどうかをチェックするファイルサイズ、MP3タイトルタグから消去するプレフィックス文字列を定義する
-    url_kouza_size_prefix_filters  = []
-    url_kouza_size_prefix_filters += [[ '小学生の基礎英語',            '小学生の基礎英語',             4800000, '',                             '' ]]
-    url_kouza_size_prefix_filters += [[ '中学生の基礎英語 レベル1',    '中学生の基礎英語レベル1',      7200000, '',                             '' ]]
-    url_kouza_size_prefix_filters += [[ '中学生の基礎英語 レベル２',   '中学生の基礎英語レベル2',      7200000, '',                             '' ]]
-    url_kouza_size_prefix_filters += [[ '中高生の基礎英語 in English', '中高生の基礎英語inEnglish',    7200000, '中高生の基礎英語 in English ', '' ]]
-    url_kouza_size_prefix_filters += [[ 'ラジオビジネス英語',          'ラジオビジネス英語',           7200000, 'ラジオビジネス英語 ',          '' ]]
-    url_kouza_size_prefix_filters += [[ 'ラジオ英会話',                'ラジオ英会話',                 7200000, 'ラジオ英会話 ',                '' ]]
-    url_kouza_size_prefix_filters += [[ '英会話タイムトライアル',      '英会話タイムトライアル',       4800000, '英会話タイムトライアル',       '' ]]
-    url_kouza_size_prefix_filters += [[ 'ニュースで学ぶ「現代英語」',  'ニュースで学ぶ「現代英語」',   7200000, 'ニュースで学ぶ「現代英語」 ',  '' ]]
-    url_kouza_size_prefix_filters += [[ 'ボキャブライダー',            'ボキャブライダー',             2400000, '',                             '' ]]
-    url_kouza_size_prefix_filters += [[ 'まいにち中国語',              'まいにち中国語',               7200000, 'まいにち中国語 ',              '' ]]
-    url_kouza_size_prefix_filters += [[ 'ステップアップ中国語',        'ステップアップ中国語',         7200000, 'ステップアップ中国語',         '' ]]
-    url_kouza_size_prefix_filters += [[ 'まいにちハングル講座',        'まいにちハングル講座',         7200000, 'まいにちハングル講座 ',        '' ]]
-    url_kouza_size_prefix_filters += [[ 'ステップアップ ハングル講座', 'ステップアップハングル講座',   7200000, 'ステップアップ ハングル講座 ', '' ]]
-    url_kouza_size_prefix_filters += [[ 'まいにちイタリア語',          'まいにちイタリア語【初級編】', 7200000, 'まいにちイタリア語 初級編 ',   'まいにちイタリア語　初級編　' ]]
-    url_kouza_size_prefix_filters += [[ 'まいにちイタリア語',          'まいにちイタリア語【応用編】', 7200000, 'まいにちイタリア語 応用編 ',   'まいにちイタリア語　応用編　' ]]
-    url_kouza_size_prefix_filters += [[ 'まいにちドイツ語',            'まいにちドイツ語【初級編】',   7200000, 'まいにちドイツ語 初級編 ',     'まいにちドイツ語　初級編　' ]]
-    url_kouza_size_prefix_filters += [[ 'まいにちドイツ語',            'まいにちドイツ語【応用編】',   7200000, 'まいにちドイツ語 応用編 ',     'まいにちドイツ語　応用編　' ]]
-    url_kouza_size_prefix_filters += [[ 'まいにちフランス語',          'まいにちフランス語【初級編】', 7200000, 'まいにちフランス語 初級編 ',   'まいにちフランス語　初級編　' ]]
-    url_kouza_size_prefix_filters += [[ 'まいにちフランス語',          'まいにちフランス語【応用編】', 7200000, 'まいにちフランス語 応用編 ',   'まいにちフランス語　応用編　' ]]
-    url_kouza_size_prefix_filters += [[ 'まいにちスペイン語',          'まいにちスペイン語【初級編】', 7200000, 'まいにちスペイン語 初級編 ',   'まいにちスペイン語　初級編　' ]]
-    url_kouza_size_prefix_filters += [[ 'まいにちスペイン語',          'まいにちスペイン語【応用編】', 7200000, 'まいにちスペイン語 応用編 ',   'まいにちスペイン語　応用編　' ]]
-    url_kouza_size_prefix_filters += [[ 'まいにちロシア語',            'まいにちロシア語【初級編】',   7200000, 'まいにちロシア語 初級編 ',     'まいにちロシア語　初級編　' ]]
-    url_kouza_size_prefix_filters += [[ 'まいにちロシア語',            'まいにちロシア語【応用編】',   7200000, 'まいにちロシア語 応用編 ',     'まいにちロシア語　応用編　' ]]
-    url_kouza_size_prefix_filters += [[ 'アラビア語講座',              'アラビア語講座',               7200000, 'アラビア語講座 ',              '' ]]
-    url_kouza_size_prefix_filters += [[ 'ポルトガル語講座',            'ポルトガル語講座【入門編】',   7200000, 'ポルトガル語講座 入門 ',       '' ]]
+    trigger_kouza_size_prefix_filters  = []
+    # trigger_kouza_size_prefix_filters += [[ '小学生の基礎英語',            '小学生の基礎英語',             4800000, '',                             '' ]]
+    # trigger_kouza_size_prefix_filters += [[ '中学生の基礎英語 レベル1',    '中学生の基礎英語レベル1',      7200000, '',                             '' ]]
+    # trigger_kouza_size_prefix_filters += [[ '中学生の基礎英語 レベル２',   '中学生の基礎英語レベル2',      7200000, '',                             '' ]]
+    # trigger_kouza_size_prefix_filters += [[ '中高生の基礎英語 in English', '中高生の基礎英語inEnglish',    7200000, '中高生の基礎英語 in English ', '' ]]
+    # trigger_kouza_size_prefix_filters += [[ 'ラジオビジネス英語',          'ラジオビジネス英語',           7200000, 'ラジオビジネス英語 ',          '' ]]
+    trigger_kouza_size_prefix_filters += [[ 'ラジオ英会話',                'ラジオ英会話',                 7200000, 'ラジオ英会話 ',                '' ]]
+    # trigger_kouza_size_prefix_filters += [[ '英会話タイムトライアル',      '英会話タイムトライアル',       4800000, '英会話タイムトライアル',       '' ]]
+    trigger_kouza_size_prefix_filters += [[ 'ニュースで学ぶ「現代英語」',  'ニュースで学ぶ「現代英語」',   7200000, 'ニュースで学ぶ「現代英語」 ',  '' ]]
+    # trigger_kouza_size_prefix_filters += [[ 'ボキャブライダー',            'ボキャブライダー',             2400000, '',                             '' ]]
+    # trigger_kouza_size_prefix_filters += [[ 'まいにち中国語',              'まいにち中国語',               7200000, 'まいにち中国語 ',              '' ]]
+    # trigger_kouza_size_prefix_filters += [[ 'ステップアップ中国語',        'ステップアップ中国語',         7200000, 'ステップアップ中国語',         '' ]]
+    # trigger_kouza_size_prefix_filters += [[ 'まいにちハングル講座',        'まいにちハングル講座',         7200000, 'まいにちハングル講座 ',        '' ]]
+    # trigger_kouza_size_prefix_filters += [[ 'ステップアップ ハングル講座', 'ステップアップハングル講座',   7200000, 'ステップアップ ハングル講座 ', '' ]]
+    trigger_kouza_size_prefix_filters += [[ 'まいにちイタリア語',          'まいにちイタリア語【初級編】', 7200000, 'まいにちイタリア語 初級編 ',   'まいにちイタリア語　初級編　' ]]
+    trigger_kouza_size_prefix_filters += [[ 'まいにちイタリア語',          'まいにちイタリア語【応用編】', 7200000, 'まいにちイタリア語 応用編 ',   'まいにちイタリア語　応用編　' ]]
+    trigger_kouza_size_prefix_filters += [[ 'まいにちドイツ語',            'まいにちドイツ語【初級編】',   7200000, 'まいにちドイツ語 初級編 ',     'まいにちドイツ語　初級編　' ]]
+    trigger_kouza_size_prefix_filters += [[ 'まいにちドイツ語',            'まいにちドイツ語【応用編】',   7200000, 'まいにちドイツ語 応用編 ',     'まいにちドイツ語　応用編　' ]]
+    trigger_kouza_size_prefix_filters += [[ 'まいにちフランス語',          'まいにちフランス語【初級編】', 7200000, 'まいにちフランス語 初級編 ',   'まいにちフランス語　初級編　' ]]
+    trigger_kouza_size_prefix_filters += [[ 'まいにちフランス語',          'まいにちフランス語【応用編】', 7200000, 'まいにちフランス語 応用編 ',   'まいにちフランス語　応用編　' ]]
+    trigger_kouza_size_prefix_filters += [[ 'まいにちスペイン語',          'まいにちスペイン語【初級編】', 7200000, 'まいにちスペイン語 初級編 ',   'まいにちスペイン語　初級編　' ]]
+    trigger_kouza_size_prefix_filters += [[ 'まいにちスペイン語',          'まいにちスペイン語【応用編】', 7200000, 'まいにちスペイン語 応用編 ',   'まいにちスペイン語　応用編　' ]]
+    # trigger_kouza_size_prefix_filters += [[ 'まいにちロシア語',            'まいにちロシア語【初級編】',   7200000, 'まいにちロシア語 初級編 ',     'まいにちロシア語　初級編　' ]]
+    # trigger_kouza_size_prefix_filters += [[ 'まいにちロシア語',            'まいにちロシア語【応用編】',   7200000, 'まいにちロシア語 応用編 ',     'まいにちロシア語　応用編　' ]]
+    # trigger_kouza_size_prefix_filters += [[ 'アラビア語講座',              'アラビア語講座',               7200000, 'アラビア語講座 ',              '' ]]
+    # trigger_kouza_size_prefix_filters += [[ 'ポルトガル語講座',            'ポルトガル語講座【入門編】',   7200000, 'ポルトガル語講座 入門 ',       '' ]]
 
     # ダウンロード先のフォルダがない場合はフォルダを作成する
     os.makedirs(download_dir, exist_ok=True)
 
-    #各語学講座のseries_site_idとcorner_site_idが記載されているJSONから各講座のJSONファイルのダウンロードURLを上書きする（試験実装）
+    #各語学講座のseries_site_idとcorner_site_idが記載されているJSONからIDを取得し、各講座のJSONファイルのダウンロードURLを生成する
     series_corner_id_url="https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/corners/new_arrivals"
     series_corner_id_json = download_dir+"/series_corner_id.json"
     urllib.request.urlretrieve(series_corner_id_url, series_corner_id_json)
     with open(series_corner_id_json,'r',encoding="utf-8") as f:
         series_corner_ids = json.load(f)
     os.remove(series_corner_id_json)
-    for i in range(len(url_kouza_size_prefix_filters)):
+    for i in range(len(trigger_kouza_size_prefix_filters)):
         for series_corner_id in series_corner_ids['corners']:
-            if series_corner_id['title']==url_kouza_size_prefix_filters[i][0] :
+            if series_corner_id['title']==trigger_kouza_size_prefix_filters[i][0] :
                 series_site_id = series_corner_id['series_site_id']
                 corner_site_id = series_corner_id['corner_site_id']
-                url_kouza_size_prefix_filters[i][0] = 'https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/series?site_id='+series_site_id+'&corner_site_id='+corner_site_id
+                trigger_kouza_size_prefix_filters[i][0] = 'https://www.nhk.or.jp/radio-api/app/v1/web/ondemand/series?site_id='+series_site_id+'&corner_site_id='+corner_site_id
                 break
 
     #各語学講座のストリーミングデータをダウンロードする
-    for url_kouza_size_prefix_filter in url_kouza_size_prefix_filters:
+    for url_kouza_size_prefix_filter in trigger_kouza_size_prefix_filters:
         #URL/講座名(=MP3タグ名)/ファイルサイズを格納する
         url=url_kouza_size_prefix_filter[0]
         kouza=url_kouza_size_prefix_filter[1]
